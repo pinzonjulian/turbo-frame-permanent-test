@@ -1,6 +1,8 @@
 <h1>Static#frame_default</h1>
 <%= turbo_frame_tag :modal, refresh: :morph do %>
-  <div><%= Time.current %> inside default</div>
-  <p>Find me in app/views/static/frame_default.html.erb</p>
+  <dialog id="dialogDefault" data-controller="dialog">
+    <button type="button" data-action="dialog#close">close</button>
+    <p>Find me in app/views/static/frame_default.html.erb</p>
+  </dialog>
 <% end %>
 
