@@ -2,6 +2,7 @@
 <%= turbo_frame_tag :modal, refresh: :morph do %>
   <dialog id="dialogDefault" data-controller="dialog">
     <button type="button" data-action="dialog#close">close</button>
+    <button type="button" data-controller="debugger" data-action="debugger#triggerMorphRefresh">Refresh with Morph</button>
     <p>Find me in app/views/static/frame_default.html.erb</p>
   </dialog>
 <% end %>

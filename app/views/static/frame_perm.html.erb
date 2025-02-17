@@ -4,6 +4,7 @@
   <div id="i-am-unique" data-turbo-permanent>
     <dialog id="dialogPerm" data-controller="dialog">
         <button type="button" data-action="dialog#close">close</button>
+        <button type="button" data-controller="debugger" data-action="debugger#triggerMorphRefresh">Refresh with Morph</button>
         <div><%= Time.current %> inside permanent: I SHOULD NOT CHANGE</div>
         <p>Find me in app/views/static/frame_perm.html.erb</p>
     </dialog>
