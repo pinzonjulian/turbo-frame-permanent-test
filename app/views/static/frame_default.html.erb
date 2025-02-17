@@ -1,5 +1,5 @@
 <h1>Static#frame_default</h1>
-<%= turbo_frame_tag :modal do %>
+<%= turbo_frame_tag :modal, refresh: :morph do %>
   <div><%= Time.current %> inside default</div>
   <p>Find me in app/views/static/frame_default.html.erb</p>
 <% end %>

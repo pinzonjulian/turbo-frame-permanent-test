@@ -1,5 +1,5 @@
 <h1>Static#frame_perm</h1>
-<%= turbo_frame_tag :modal do  %>
+<%= turbo_frame_tag :modal, refresh: :morph do  %>
   <div><%= Time.current %> outside permanent: I SHOULD CHANGE</div>
   <div id="i-am-unique" data-turbo-permanent>
     <div><%= Time.current %> inside permanent: I SHOULD NOT CHANGE</div>
